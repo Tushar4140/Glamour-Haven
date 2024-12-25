@@ -71,7 +71,7 @@ Welcome to **Glamour Heaven**, your ultimate destination for beauty, elegance, a
 
 ## 📞 **Contact Us** 💌
 For inquiries, feel free to reach out:
-- **Email**: [naikgayatri286@gmail.com](mailto:info@glamourheaven.com)
+- **Email**: [tp99011@gmail.com](mailto:info@glamourheaven.com)
 
 ---
 
