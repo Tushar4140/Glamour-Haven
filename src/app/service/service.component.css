@@ -1,0 +1,115 @@
+
+section {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+
+/* General Styling */
+body {
+  margin: 0;
+  font-family: 'Alatsi', sans-serif;
+}
+
+
+
+/* Service Section */
+body {
+  margin: 0;
+  font-family: 'Alatsi', sans-serif;
+}
+
+/* Service Section */
+.services {
+  padding: 60px 20px;
+  text-align: center;
+  background: linear-gradient(to bottom right, #FFE5EC, #FFC2D1, #FFB3C6, #FF8FAB, #FB6F92);
+  color: #FB6F92; /* Main text color */
+}
+
+.services h2 {
+  margin-bottom: 40px;
+  font-size: 2.5rem;
+  color: #cd637e; /* Heading color */
+  font-family: 'Chela One', cursive;
+  transition: color 0.3s, transform 0.3s;
+}
+
+.services h2:hover {
+  color: #FF8FAB;
+  transform: scale(1.05);
+}
+
+.service-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Center items horizontally */
+  gap: 20px; /* Space between items */
+}
+
+.service-item {
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 20px;
+  border-radius: 10px; /* Slightly rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: calc(33.333% - 40px); /* Three items per row with space */
+  min-width: 280px; /* Ensure a minimum width for readability */
+  position: relative; /* Needed for positioning the card */
+  transition: transform 0.3s, box-shadow 0.3s;
+  box-sizing: border-box; /* Include padding in width calculation */
+}
+
+.service-item img {
+  width: 100%;
+  border-radius: 8px 8px 0 0;
+  margin-bottom: 15px;
+  /* Removed hover effect */
+}
+
+.service-item h3 {
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+  color: #FB6F92; /* Heading color */
+  font-family: 'Cinzel Decorative', cursive;
+}
+
+.service-item p {
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #263238; /* Paragraph color */
+}
+
+/* Card Styling */
+.card {
+  width: 120px; /* Small card size */
+  height: 160px;
+  border-radius: 20px;
+  background: #e0e0e0; /* Light grey background */
+  box-shadow: 10px 10px 30px #bebebe,
+              -10px -10px 30px #ffffff;
+  position: absolute;
+  top: 10px; /* Adjust as needed */
+  right: 10px; /* Adjust as needed */
+  z-index: -1;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.service-item:hover .card {
+  transform: scale(1.05);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .service-list {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .service-item {
+    width: 80%; /* Full width for smaller screens */
+  }
+
+  .services h2 {
+    font-size: 2rem;
+  }
+}

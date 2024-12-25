@@ -1,0 +1,160 @@
+
+/* Contact Section */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  html, body {
+    height: 100%;
+    background: url('../../assets/abstrack_backhround_ppink__generated.jpg') no-repeat center center/cover;
+  }
+  
+  body {
+    color: #333;
+    font-family: 'Alatsi', sans-serif;
+    font-weight: normal;
+    font-size: 1em;
+    background: transparent
+  }
+  
+  .container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0% auto;
+    padding: 20px;
+  }
+  
+  .textcenter {
+    text-align: center;
+  }
+  
+  .section1 {
+    padding: 20px 0;
+  }
+  
+  .section1 h1 {
+    font-size: 46px;
+    color: #cd637e;
+    font-weight: 700;
+    font-family: 'Chela One', cursive;
+    margin-bottom: 20px;
+  }
+  
+  .section2 {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px 0;
+  }
+  
+  .section2 .col2 {
+    width: calc(50% - 10px);
+    padding: 20px;
+    background: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .section2 .sec2addr p {
+    font-size: 16px;
+    color: #333;
+    line-height: 1.6;
+    margin-bottom: 10px;
+    text-align: left;
+  }
+  
+  .section2 .sec2contactform h3 {
+    font-size: 24px;
+    color: #cd637e;
+    margin-bottom: 20px;
+    text-align: left;
+  }
+  
+  .section2 .sec2contactform input[type="text"],
+  .section2 .sec2contactform input[type="email"],
+  .section2 .sec2contactform textarea {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background: #ffffff;
+    color: #333;
+    font-size: 16px;
+    font-family: 'Alatsi', sans-serif;
+  }
+  
+  .section2 .sec2contactform textarea {
+    height: 150px;
+    resize: vertical;
+  }
+  
+  .section2 .sec2contactform input[type="submit"] {
+    padding: 15px 30px;
+    color: #fff;
+    background: #cd637e;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    font-family: 'Alatsi', sans-serif;
+  }
+  
+  .section2 .sec2contactform input[type="submit"]:hover {
+    background: #555;
+  }
+  
+  .map-wrapper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    margin-bottom: 20px;
+  }
+  
+  .map-container {
+    position: relative;
+    width: 100%;
+    height: 700px;
+    background: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+  }
+  
+  .map-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+  }
+  
+  @media only screen and (max-width: 768px) {
+    .section2 {
+      flex-direction: column;
+    }
+  
+    .section2 .col2 {
+      width: 100%;
+    }
+  }
+  
+  @media only screen and (max-width: 480px) {
+    .section1 h1 {
+      font-size: 28px;
+    }
+  
+    .section2 .sec2contactform input[type="text"],
+    .section2 .sec2contactform input[type="email"] {
+      width: 100%;
+    }
+  
+    .section2 .sec2contactform input[type="submit"] {
+      width: 100%;
+    }
+  }
+  

@@ -1,0 +1,202 @@
+body {
+  background-color: #ffffff; 
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  position: relative;
+  border-radius: 20px;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 25px 40px -10px;
+  padding: 40px;
+  width: 80%;
+  max-width: 1200px;
+  background: #FFC2D1;
+  transition: all 0.3s ease-in-out;
+}
+
+
+
+.image-container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.character-image {
+  max-width: 100%;
+  height: auto;
+  transition: all 0.3s ease-in-out;
+}
+
+.character-image:hover {
+  transform: scale(1.05);
+}
+
+.form-container {
+  background: #FFFFFF;
+  border-radius: 20px;
+  padding: 40px;
+  border: 2px solid #FFB3C6;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 30px -10px;
+  flex: 1;
+
+}
+
+.form-container:hover {
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 25px 40px -10px;
+}
+
+.heading {
+  text-align: left;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  font-size: 32px;
+  color: #460C68;
+  margin-bottom: 20px; /* Equal margin bottom for heading */
+}
+
+.form {
+  margin: 0; /* Reset margin for the form */
+}
+
+.form .input {
+  width: 100%;
+  background: #FFE5EC;
+  border: 1px solid #FF8FAB;
+  padding: 15px;
+  border-radius: 10px;
+  margin-bottom: 20px; /* Equal margin bottom for input fields */
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 8px -4px;
+  font-size: 16px;
+  transition: all 0.3s ease-in-out;
+}
+
+.form .input::placeholder {
+  color: #FF8FAB;
+}
+
+.form .input:focus {
+  outline: none;
+  border-color: #FB6F92;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px -4px;
+}
+
+.form .forgot-password {
+  display: block;
+  margin-bottom: 20px; /* Equal margin bottom for forgot-password */
+  text-align: right;
+}
+
+.form .forgot-password a {
+  font-size: 14px;
+  color: #FF8FAB;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+}
+
+.form .forgot-password a:hover {
+  color: #FB6F92;
+  text-decoration: underline;
+}
+
+.form .login-button {
+  display: block;
+  width: 100%;
+  font-weight: 700;
+  background: linear-gradient(45deg, #FB6F92 0%, #FF8FAB 100%);
+  color: #FFFFFF;
+  padding: 15px;
+  border-radius: 10px;
+  border: none;
+  font-size: 16px;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+  margin-bottom: 20px; /* Equal margin bottom for button */
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 20px -5px;
+}
+
+.form .login-button:hover {
+  transform: scale(1.05);
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 10px 25px -5px;
+}
+
+.form .login-button:active {
+  transform: scale(0.95);
+}
+
+.social-account-container {
+  margin-top: 30px;
+}
+
+.social-account-container .title {
+  display: block;
+  text-align: center;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.social-account-container .social-accounts {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.social-account-container .social-accounts .social-button {
+  background: #ffffff;
+  border: 2px solid #FF8FAB;
+  padding: 10px;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: grid;
+  place-content: center;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 8px -4px;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.social-account-container .social-accounts .social-button .svg {
+  fill: #FB6F92;
+  width: 24px;
+  height: 24px;
+  transition: all 0.3s ease-in-out;
+}
+
+.social-account-container .social-accounts .social-button:hover {
+  transform: scale(1.1);
+  background: #FFB3C6;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 6px 12px -4px;
+}
+
+.social-account-container .social-accounts .social-button:active {
+  transform: scale(0.9);
+}
+
+.agreement {
+  display: block;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.agreement a {
+  text-decoration: none;
+  color: #FF8FAB;
+  font-size: 12px;
+  transition: all 0.3s ease-in-out;
+}
+
+.agreement a:hover {
+  color: #FB6F92;
+  text-decoration: underline;
+}
+

@@ -1,0 +1,155 @@
+/* About Section */
+.about {
+    padding: 100px 20px; /* Added top and bottom padding; reduced horizontal padding for responsiveness */
+    background-color: #ffffff; /* Light background for clarity */
+  }
+  
+  .about-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%; /* Full width of the viewport */
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 30px; /* Space between image and text */
+    flex-wrap: wrap; /* Wrap on smaller screens */
+  }
+  
+  .about-img {
+    flex: 1;
+    max-width: 70%; /* Adjusted width for balance */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 15px; /* Enhanced border radius for a smoother look */
+    transition: transform 0.3s ease-in-out; /* Smooth transition */
+  }
+  
+  .about-text {
+    flex: 1;
+    max-width: 40%; /* Adjusted width for balance */
+    padding: 0 20px; /* Added padding for better text alignment */
+  }
+  
+  .about-text h1 {
+    font-size: 4.5rem; /* Adjusted for better readability */
+    margin-bottom: 20px;
+    color: #FF4D6D; /* Updated color */
+    font-family: 'Chela One', cursive;
+    text-align: left; /* Align text to the left */
+    line-height: 1.2; /* Improved line-height for headings */
+  }
+  
+  .about-text p {
+    margin-bottom: 20px;
+    line-height: 1.8; /* Improved line-height for readability */
+    color: #333;
+    font-size: 1.125rem; /* Slightly larger font size for visibility */
+    text-align: left; /* Align text to the left */
+  }
+  
+  .about-text p:last-child {
+    margin-bottom: 0;
+  }
+  
+  .about-img:hover {
+    transform: scale(1.05); /* Enhanced zoom effect */
+  }
+  
+  @media (max-width: 768px) {
+    .about-container {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+  
+    .about-img {
+      max-width: 90%; /* Reduced width for smaller screens */
+      margin-bottom: 20px;
+    }
+  
+    .about-text {
+      max-width: 90%;
+      padding: 0; /* Removed padding on smaller screens */
+    }
+  }
+  
+  
+  /* Team Section */
+  
+  /* Team Section */
+  .team-section {
+    padding: 60px 20px;
+    background-color: #FFCCD5; /* Soft pink background */
+  }
+  
+  .team-section h3 {
+    font-size: 2.5rem;
+    margin-bottom: 30px; /* Increased margin for better spacing */
+    color: #FF4D6D; /* Bold pink for the heading */
+    text-align: center;
+    font-family: 'Chela One', cursive;
+  }
+  
+  .team-members {
+    display: flex;
+    justify-content: center; /* Center items horizontally */
+    flex-wrap: wrap; /* Wrap items if they overflow */
+    gap: 20px; /* Space between items */
+  }
+  
+  .member {
+    display: flex;
+    flex-direction: column;
+   align-items: center;
+   background-color: #FFF;
+   padding: 20px;
+  border-radius: 15px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+   width: 220px;
+   -o-transition: transform 0.3s, box-shadow 0.3s;
+    -webkit-transition: transform 0.3s, box-shadow 0.3s;
+    -moz-transition: transform 0.3s, box-shadow 0.3s;
+    -ms-transition: transform 0.3s, box-shadow 0.3s;
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .member:hover {
+    transform: scale(1.05); /* Slight zoom effect on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Increased shadow on hover */
+  }
+  
+  .member-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 5px solid #FF758F; /* Border using the provided color */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .member-img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  .member p {
+    margin-top: 10px;
+    color: #590D22; /* Darker text color for contrast */
+    text-align: center;
+    font-size: 1rem; /* Standard font size for readability */
+    font-family: 'Aladin', cursive; /* Use Aladin for the description */
+    transition: color 0.3s;
+  }
+  
+  .member p:hover {
+    color: #C9184A; /* Slight color change on hover for emphasis */
+  }
+  
+  @media (max-width: 768px) {
+    .team-members {
+      gap: 15px; /* Adjust spacing for smaller screens */
+    }
+  
+    .member {
+      width: 180px; /* Adjust width for smaller screens */
+    }
+  }
